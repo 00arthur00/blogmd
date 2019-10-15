@@ -1,7 +1,8 @@
 ---
 title: go scheduler
 date: 2019-10-15 15:56:51
-tags:
+tags: [golang, scheduler]
+category: [golang]
 ---
 
 # MPG
