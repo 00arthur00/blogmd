@@ -54,13 +54,13 @@ go func() --> G --> P|local <=========> global
 1. 如果G.fn包含cgo或者用syscall方式block在IO上，需要将当前的P和M解绑，P可能会被别的M取走
 2. 对于RawSysCall类型的系统调用，则直接等待返回(因为速度快的才采用这种方式)
 
-goroutine切换的可能时机:
+goroutine切换的可能时机:go fun()、垃圾回收、系统调用、同步与编排:
 1. mutex同步导致阻塞
 2. 网络IO
 3. 系统调用(syscall)
 4. channel阻塞
 5. 被sysmon设置为抢占
-6. 新建channel
+6. 关键字go: 新建gourinte
 7. gc过程中各种策略导致的调度
 
 # 一些常量
