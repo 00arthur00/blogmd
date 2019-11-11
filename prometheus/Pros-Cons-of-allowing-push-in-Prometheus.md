@@ -1,7 +1,7 @@
 ---
 title: Pros/Cons of allowing push in Prometheus
 date: 2019-10-30 15:38:34
-tags: [监控, prometheus]]
+tags: [监控, prometheus]
 ---
 Pros/Cons of allowing push in Prometheus
 # Pros:
