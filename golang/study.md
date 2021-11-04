@@ -43,3 +43,11 @@ func main() {
 go build -gcflags="-N -l" main.go
 go tool objdump main|egrep  "main.go:9|main.go:6|main.go:12"
 ```
+查找方法2:
+```bash
+go build -gcflags="-N -l" main.go
+dlv exec ./main #或者 dlv exec --check-go-version=false ./main
+# b main.go:6
+# c
+# disass
+```
